@@ -1,18 +1,20 @@
-# Product Inventory Management System (FastAPI + React)
+# Product Inventory Management System
 
-A full-stack **Product Inventory Management System** developed using **FastAPI** for the backend and **React.js** for the frontend.  
-This application enables users to perform CRUD operations on products with a clean UI and RESTful API architecture.
+A full-stack **Product Inventory Management System** built using **FastAPI** for the backend and **React.js** for the frontend.  
+This project allows users to manage products efficiently through RESTful APIs and a modern web interface.
 
 ---
 
 ## 🚀 Features
 
-- Create, read, update, and delete products
-- RESTful APIs built with FastAPI
-- Interactive frontend built with React
+- Add new products
+- View all products
+- Update existing product details
+- Delete products
+- REST API with FastAPI
+- Interactive UI with React
 - Database integration using SQLAlchemy
 - CORS enabled for frontend-backend communication
-- Clean and modular project structure
 
 ---
 
@@ -60,7 +62,7 @@ PRODUCT_INVENTORY/
 
 ---
 
-## ⚙️ How to Run the Project Locally
+## ⚙️ Getting Started
 
 ### 1️⃣ Clone the Repository
 ```
@@ -72,7 +74,7 @@ cd PRODUCT_INVENTORY
 
 ### 2️⃣ Backend Setup (FastAPI)
 
-Create and activate a virtual environment:
+Create and activate virtual environment:
 ```
 python -m venv venv
 venv\Scripts\activate
@@ -83,12 +85,12 @@ Install dependencies:
 pip install fastapi uvicorn sqlalchemy
 ```
 
-Run the FastAPI server:
+Run backend server:
 ```
 uvicorn main:app --reload
 ```
 
-Backend will be available at:
+Backend URL:
 ```
 http://127.0.0.1:8000
 ```
@@ -102,7 +104,7 @@ http://127.0.0.1:8000/docs
 
 ### 3️⃣ Frontend Setup (React)
 
-Navigate to the frontend directory:
+Navigate to frontend folder:
 ```
 cd frontend
 ```
@@ -112,40 +114,39 @@ Install dependencies:
 npm install
 ```
 
-Start the React development server:
+Start frontend server:
 ```
 npm start
 ```
 
-Frontend will run at:
+Frontend URL:
 ```
 http://localhost:3000
 ```
 
 ---
 
-## 🔐 Security & Git Ignore
+## 🔐 Git Ignore & Security
 
-The following files and folders are intentionally excluded from GitHub using `.gitignore`:
+The following items are excluded from version control using `.gitignore`:
 - Virtual environments (`venv/`, `env/`)
-- Node dependencies (`node_modules/`)
-- Environment variable files (`.env`)
+- Node modules (`node_modules/`)
+- Environment files (`.env`)
 - Database files (`*.db`)
 - Cache files (`__pycache__/`)
 
-This ensures no sensitive or unnecessary files are pushed to the repository.
+No sensitive or unnecessary files are pushed to GitHub.
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Improvements
 
 - User authentication and authorization
-- Product categories and search
+- Product categories and filters
 - Pagination and sorting
-- Deployment using Render / Railway / Vercel
+- Deployment to cloud platforms
 - Role-based access control
-
 
 ## 📄 License
 
-This project is developed for educational and learning purposes.
+This project is created for educational and learning purposes.
