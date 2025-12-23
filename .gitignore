@@ -1,0 +1,21 @@
+# Virtual Environments
+venv/
+env/
+myenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Database files
+*.db
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Node dependencies
+node_modules/
