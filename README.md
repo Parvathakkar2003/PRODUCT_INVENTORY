@@ -1,20 +1,18 @@
-# Product Inventory Management System
+# Product Inventory Management System (FastAPI + React)
 
-A full-stack **Product Inventory Management System** built using **FastAPI** for the backend and **React** for the frontend.  
-This application allows users to manage products efficiently with CRUD operations and a clean user interface.
+A full-stack **Product Inventory Management System** developed using **FastAPI** for the backend and **React.js** for the frontend.  
+This application enables users to perform CRUD operations on products with a clean UI and RESTful API architecture.
 
 ---
 
 ## 🚀 Features
 
-- Add new products
-- View product list
-- Update existing products
-- Delete products
-- RESTful API using FastAPI
-- React-based frontend
+- Create, read, update, and delete products
+- RESTful APIs built with FastAPI
+- Interactive frontend built with React
 - Database integration using SQLAlchemy
 - CORS enabled for frontend-backend communication
+- Clean and modular project structure
 
 ---
 
@@ -42,12 +40,15 @@ PRODUCT_INVENTORY/
 │
 ├── frontend/
 │   ├── public/
+│   │   ├── index.html
+│   │   └── manifest.json
 │   └── src/
 │       ├── App.js
 │       ├── App.css
 │       ├── TaglineSection.js
 │       ├── TaglineSection.css
-│       └── index.js
+│       ├── index.js
+│       └── index.css
 │
 ├── database.py
 ├── database_models.py
@@ -59,7 +60,7 @@ PRODUCT_INVENTORY/
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ How to Run the Project Locally
 
 ### 1️⃣ Clone the Repository
 ```
@@ -74,7 +75,7 @@ cd PRODUCT_INVENTORY
 Create and activate a virtual environment:
 ```
 python -m venv venv
-venv\Scripts\activate   # On Windows
+venv\Scripts\activate
 ```
 
 Install dependencies:
@@ -87,12 +88,12 @@ Run the FastAPI server:
 uvicorn main:app --reload
 ```
 
-Backend will run at:
+Backend will be available at:
 ```
 http://127.0.0.1:8000
 ```
 
-API Docs:
+API Documentation:
 ```
 http://127.0.0.1:8000/docs
 ```
@@ -101,7 +102,7 @@ http://127.0.0.1:8000/docs
 
 ### 3️⃣ Frontend Setup (React)
 
-Navigate to frontend folder:
+Navigate to the frontend directory:
 ```
 cd frontend
 ```
@@ -111,7 +112,7 @@ Install dependencies:
 npm install
 ```
 
-Start React app:
+Start the React development server:
 ```
 npm start
 ```
@@ -123,29 +124,28 @@ http://localhost:3000
 
 ---
 
-## 🔒 Environment & Security
+## 🔐 Security & Git Ignore
 
-The following are intentionally ignored using `.gitignore`:
-- Virtual environments (`venv/`)
-- Node modules (`node_modules/`)
-- Environment files (`.env`)
+The following files and folders are intentionally excluded from GitHub using `.gitignore`:
+- Virtual environments (`venv/`, `env/`)
+- Node dependencies (`node_modules/`)
+- Environment variable files (`.env`)
 - Database files (`*.db`)
+- Cache files (`__pycache__/`)
 
-No sensitive information is pushed to GitHub.
+This ensures no sensitive or unnecessary files are pushed to the repository.
 
 ---
 
 ## 🔮 Future Enhancements
 
-- User authentication & authorization
-- Product categories
-- Search and filter functionality
-- Deployment (Render / Vercel)
+- User authentication and authorization
+- Product categories and search
 - Pagination and sorting
+- Deployment using Render / Railway / Vercel
 - Role-based access control
 
----
 
 ## 📄 License
 
-This project is created for learning and academic purposes.
+This project is developed for educational and learning purposes.
