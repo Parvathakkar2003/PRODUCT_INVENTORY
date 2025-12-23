@@ -1,73 +1,151 @@
-# PRODUCT_INVENTORY
+# Product Inventory Management System
 
-A simple **Product Inventory Management System** built for tracking products, stock levels, and basic inventory operations. Perfect for small businesses, stores, or learning CRUD operations with web technologies.
+A full-stack **Product Inventory Management System** built using **FastAPI** for the backend and **React** for the frontend.  
+This application allows users to manage products efficiently with CRUD operations and a clean user interface.
+
+---
 
 ## 🚀 Features
 
-- ✅ Add new products with name, price, quantity, and description
-- ✅ View complete product inventory list
-- ✅ Update product details and stock quantities
-- ✅ Delete products from inventory
-- ✅ Search and filter products
-- ✅ Responsive design for all devices
+- Add new products
+- View product list
+- Update existing products
+- Delete products
+- RESTful API using FastAPI
+- React-based frontend
+- Database integration using SQLAlchemy
+- CORS enabled for frontend-backend communication
+
+---
 
 ## 🛠️ Tech Stack
-Frontend: HTML5, CSS3, JavaScript
-Styling: Modern CSS / Tailwind CSS / Bootstrap
-Backend: (JavaScript/Node.js / Python / PHP)
-Database: Local Storage / JSON / SQLite
 
-*(Update based on your actual implementation)*
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- Uvicorn
+
+### Frontend
+- React.js
+- JavaScript
+- HTML
+- CSS
+
+---
 
 ## 📁 Project Structure
 
+```
 PRODUCT_INVENTORY/
-├── index.html # Main application page
-├── style.css # Styling for responsive design
-├── script.js # Core inventory logic (CRUD operations)
-├── products.json # Product data storage
-├── assets/ # Images and icons
-└── README.md # Project documentation
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── App.js
+│       ├── App.css
+│       ├── TaglineSection.js
+│       ├── TaglineSection.css
+│       └── index.js
+│
+├── database.py
+├── database_models.py
+├── models.py
+├── main.py
+├── .gitignore
+└── README.md
+```
 
+---
 
-## 🎯 Quick Start
+## ⚙️ Setup Instructions
 
-1. **Clone/Download** the repository
-2. **Open** `index.html` in any modern web browser
-3. **Start managing** your inventory immediately!
+### 1️⃣ Clone the Repository
+```
+git clone https://github.com/Parvathakkar2003/PRODUCT_INVENTORY.git
+cd PRODUCT_INVENTORY
+```
 
-No installation required - just open in browser!
+---
 
+### 2️⃣ Backend Setup (FastAPI)
 
-## 💡 How to Use
+Create and activate a virtual environment:
+```
+python -m venv venv
+venv\Scripts\activate   # On Windows
+```
 
-1. **Add Product**: Click "Add Product" → Fill form → Save
-2. **View Inventory**: See all products in a clean table
-3. **Edit Product**: Click edit icon → Update details → Save
-4. **Delete Product**: Click delete icon → Confirm removal
-5. **Search**: Type in search box to filter products
+Install dependencies:
+```
+pip install fastapi uvicorn sqlalchemy
+```
 
-## 🖥️ Live Demo
+Run the FastAPI server:
+```
+uvicorn main:app --reload
+```
 
-Open `index.html` directly in Chrome, Firefox, or Safari. Data persists in browser localStorage.
+Backend will run at:
+```
+http://127.0.0.1:8000
+```
+
+API Docs:
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+### 3️⃣ Frontend Setup (React)
+
+Navigate to frontend folder:
+```
+cd frontend
+```
+
+Install dependencies:
+```
+npm install
+```
+
+Start React app:
+```
+npm start
+```
+
+Frontend will run at:
+```
+http://localhost:3000
+```
+
+---
+
+## 🔒 Environment & Security
+
+The following are intentionally ignored using `.gitignore`:
+- Virtual environments (`venv/`)
+- Node modules (`node_modules/`)
+- Environment files (`.env`)
+- Database files (`*.db`)
+
+No sensitive information is pushed to GitHub.
+
+---
 
 ## 🔮 Future Enhancements
 
-- [ ] Export to CSV/Excel
-- [ ] Categories & Suppliers management
-- [ ] Low stock alerts
-- [ ] Barcode/QR code scanning
-- [ ] Print inventory reports
-- [ ] User authentication
+- User authentication & authorization
+- Product categories
+- Search and filter functionality
+- Deployment (Render / Vercel)
+- Pagination and sorting
+- Role-based access control
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+---
 
 ## 📄 License
 
-This project is **MIT Licensed** - feel free to use it anywhere!
+This project is created for learning and academic purposes.
