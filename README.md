@@ -24,7 +24,7 @@ This project allows users to manage products efficiently through RESTful APIs an
 - Python
 - FastAPI
 - SQLAlchemy
-- SQLite
+- Postgresql
 - Uvicorn
 
 ### Frontend
