@@ -82,7 +82,7 @@ venv\Scripts\activate
 
 Install dependencies:
 ```
-pip install fastapi uvicorn sqlalchemy
+pip install fastapi uvicorn sqlalchemy psycopg2
 ```
 
 Run backend server:
