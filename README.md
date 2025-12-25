@@ -1,7 +1,7 @@
 # Product Inventory Management System
 
 A full-stack **Product Inventory Management System** built using **FastAPI** for the backend and **React.js** for the frontend.  
-This project allows users to manage products efficiently through RESTful APIs and a modern web interface.
+This application allows users to perform complete **CRUD operations** on products, including adding, updating, viewing, and deleting products.
 
 ---
 
@@ -12,7 +12,7 @@ This project allows users to manage products efficiently through RESTful APIs an
 - Update existing product details
 - Delete products
 - REST API with FastAPI
-- Interactive UI with React
+- Interactive Swagger UI with React
 - Database integration using SQLAlchemy
 - CORS enabled for frontend-backend communication
 
@@ -32,6 +32,18 @@ This project allows users to manage products efficiently through RESTful APIs an
 - JavaScript
 - HTML
 - CSS
+
+**Tools**
+- Swagger UI
+- Git & GitHub
+
+---
+
+## 📄 API Documentation
+
+FastAPI provides automatic API documentation.
+
+- Swagger UI: http://localhost:8000/docs
 
 ---
 
@@ -125,6 +137,19 @@ http://localhost:3000
 ```
 
 ---
+## 🔌 API Endpoints
+
+### Product APIs
+
+| Method | Endpoint | Description |
+|------|---------|------------|
+| GET | /products | Fetch all products |
+| GET | /products/{id} | Fetch product by ID |
+| POST | /products | Create a new product |
+| PUT | /products/{id} | Update entire product |
+| PATCH | /products/{id} | Update selected fields |
+| DELETE | /products/{id} | Delete product |
+
 
 ## 🔐 Git Ignore & Security
 
